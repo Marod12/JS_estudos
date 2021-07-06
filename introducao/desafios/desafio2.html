@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <head>
+        <title>Desafio Introdução</title>
+    </head>
+    <body>
+        <h3>2° Exercício</h3>
+        <pre>
+            Crie uma função que dado um intervalo (entre x e y) exiba todos número pares:
+            function pares(x, y) {
+                // código aqui
+               }
+            pares(32, 321);               
+        </pre>
+
+        <p>Veja o resultado no console, aperte F12</p>
+
+        <br>
+        <span>Código usado:</span>
+        <pre>
+            while (x < y) {
+                if (x % 2 === 0) { 
+                    console.log(x)
+                };
+                x++
+            }
+        </pre>
+
+        <!-- Javascript,ultilize por preferência no final do <body> -->
+        <script>
+            function pares(x, y) {
+                while (x < y) {
+                    if (x % 2 === 0) { 
+                        console.log(x)
+                    };
+                    x++
+                }
+            };
+
+            pares = pares(32, 321);
+            
+        </script>
+    </body>
+</html>

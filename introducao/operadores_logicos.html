@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <head>
+        <title>Operadores lógicos</title>
+    </head>
+    <body>
+        <p>Veja o resultado no console, aperte F12</p>
+
+        <span>Código usado:</span>
+        <pre>
+            // AND, OR, NOT
+
+            var sexo = 'M', idade = 27;
+
+            if (sexo === 'M' && idade >= 18) {
+                console.log('OK')
+            }
+
+            if (sexo === 'M' || idade >= 18) {
+                console.log('OK')
+            }
+
+            if (sexo !== 'F') {
+                console.log('OK')
+            }
+
+            // Armazenar o valor de uma condição em uma variável
+            /*var masculino;
+            if (sexo === 'M') {
+                masculino = true;
+            } else {
+                masculino = false;
+            }*/
+
+            // Abreviado
+            var masculino = sexo === 'M';
+
+            console.log(masculino);
+        </pre>
+
+        <!-- Javascript,ultilize por preferência no final do <body> -->
+        <script>
+            // AND, OR, NOT
+
+            var sexo = 'M', idade = 27;
+
+            if (sexo === 'M' && idade >= 18) {
+                console.log('OK')
+            }
+
+            if (sexo === 'M' || idade >= 18) {
+                console.log('OK')
+            }
+
+            if (sexo !== 'F') {
+                console.log('OK')
+            }
+
+            // Armazenar o valor de uma condição em uma variável
+            /*var masculino;
+            if (sexo === 'M') {
+                masculino = true;
+            } else {
+                masculino = false;
+            }*/
+
+            // Abreviado
+            var masculino = sexo === 'M';
+
+            console.log(masculino);
+        </script>
+    </body>
+</html>

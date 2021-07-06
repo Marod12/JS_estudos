@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Trabalhando com a DOM</title>
+    </head>
+    <body>
+        <div id="app">
+            <input type="text" name="nome" id="nome" class="nome">
+            <button class="botao">Adicionar</button>
+        </div>
+
+        <script>
+            // buscando por elementos na DOM
+            var inputElement = document.getElementById('nome');
+            var inputElement2 = document.getElementsByTagName('input')[0];
+            var inputElement3 = document.getElementsByClassName('nome')[0];
+
+            // melhor opção
+            var inputElement4 = document.querySelector('div#app input');
+            var inputElement5 = document.querySelector('input[name=nome]');
+
+            // disparando uma ação de um botão
+            var btnElement = document.querySelector('button.botao');
+
+            btnElement.onclick = function() {
+                var text = inputElement5.value;
+                alert(text);
+            }; 
+        </script>
+    </body>
+</html>

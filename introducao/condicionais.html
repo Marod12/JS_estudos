@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <head>
+        <title>Condicionais</title>
+    </head>
+    <body>
+        <p>Veja o resultado no console, aperte F12</p>
+
+        <span>Código usado:</span>
+        <pre>
+            function sexo(sexo) {
+                // M, F
+                // Masculino, Feminino
+                // == verifica se são iguais, === verifica se são iguais é do mesmo tipo
+                /*if(sexo === 'M') {
+                    return 'Masculino';
+                } else if (sexo === 'F') {
+                    return 'Feminino';
+                } else {
+                    return 'Outro';
+                }*/
+
+                // Switch case
+                switch (sexo) {
+                    case 'M':
+                        return 'Masculino';
+                    case 'F':
+                        return 'Feminino';
+                    default:
+                        return 'Outro';
+                }
+            }
+
+            var resultado = sexo('o');
+            console.log(resultado);
+        </pre>
+        <!-- Javascript,ultilize por preferência no final do <body> -->
+        <script>
+            function sexo(sexo) {
+                // M, F
+                // Masculino, Feminino
+                // == verifica se são iguais, === verifica se são iguais é do mesmo tipo
+                /*if(sexo === 'M') {
+                    return 'Masculino';
+                } else if (sexo === 'F') {
+                    return 'Feminino';
+                } else {
+                    return 'Outro';
+                }*/
+
+                // Switch case
+                switch (sexo) {
+                    case 'M':
+                        return 'Masculino';
+                    case 'F':
+                        return 'Feminino';
+                    default:
+                        return 'Outro';
+                }
+            }
+
+            var resultado = sexo('o');
+            console.log(resultado);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <head>
+        <title>Desafio Manipulando a DOM</title>
+    </head>
+    <body>
+        <h3>1° Exercício</h3>
+
+        <pre>
+            Crie um botão que ao ser clicado cria um novo elemento em tela com a forma de um quadrado
+            vermelho com 100px de altura e largura. Sempre que o botão for clicado um novo quadrado deve
+            aparecer na tela.
+        </pre>
+
+        <p>Resultado:</p>
+
+        <div class="resultado">
+            <button>Criar</button>
+        </div>
+
+        <script>
+            var buttonAction = document.querySelector('button');
+            var containerElement = document.querySelector('.resultado');
+            
+            buttonAction.onclick = function() {
+                var divElement = document.createElement('div');
+                divElement.style.width = '100px';
+                divElement.style.height = '100px';
+                divElement.style.backgroundColor = '#f00';
+                divElement.style.marginTop = '5px';
+                containerElement.appendChild(divElement);
+            };
+            
+        </script>
+    </body>
+</html>
